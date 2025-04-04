@@ -511,3 +511,23 @@ footer p {
 .download-btn:hover {
     background-color: #000;
 }
+.social-media {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-media a {
+    color: #fff;
+    background-color: #000;
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 50%;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+
+.social-media a:hover {
+    background-color: #0d6efd; /* Blue on hover */
+    color: #fff;
+}
