@@ -126,11 +126,12 @@ nav a:hover {
     height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(to right, rgba(10, 25, 47, 0.9), rgba(10, 25, 47, 0.7)), 
-                url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+    background: linear-gradient(to right, rgba(10, 25, 47, 0.9), rgba(10, 25, 47, 0.7)),
+                url('assets/background-image.avif') no-repeat center center/cover;
     color: var(--text);
     text-align: left;
 }
+
 
 .hero-content {
     max-width: 800px;
