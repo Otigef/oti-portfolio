@@ -3,134 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geoffrey Nehemiah Otieno - Portfolio</title>
+    <title>Responsive Portfolio Website Design</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous">
-    
+    <!-----Font awesome cdn font icon css --->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Geoffrey Otieno</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <section id="home" class="hero">
-        <div class="container">
-          <div class="hero-content">
-            <h2>Geoffrey Nehemiah Otieno</h2>
-            <h2>Administration & Logistics Professional</h2>
-            <p class="intro-blurb">
-                Aspiring Software Developer with a strong foundation in administration and a growing skillset in web development.
-              </p>
-              
-            <p>Adaptable, conscientious officer with a passion for administration and logistics.</p>
-            <a href="#contact" class="btn">Contact Me</a>
-          </div>
-
-          
-            <img src="https://scontent.fnbo1-1.fna.fbcdn.net/v/t39.30808-6/481770649_630927166337028_4599393354229782662_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeHqRZf-3JM1TbxQCRMfgD-YJ73bg8VzQ6YnvduDxXNDpo1vloB5X3c6tC-ra4PUtK52viPfaUdK4q6yDQXzfD9C&_nc_ohc=x4aO9KdslTcQ7kNvwFYaDuU&_nc_oc=AdnBgBfxAU2K3pBp2VflsBX8H1krb9jUqJAWiuKmBIUFxEXNjPvVItSN2_ncWX5RiOI&_nc_zt=23&_nc_ht=scontent.fnbo1-1.fna&_nc_gid=shDUGw7HKgwJp1FXETekRA&oh=00_AYFf7bqJSswgQ7WH-9ub6G8KzH1oiC6YN1joApWdMFtLhQ&oe=67F4DBEC" class="responsive-profile-photo" alt="Geoffrey Nehemiah Otieno">
-          </div>
-        </div>
-      </section>
-
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Hardworking and motivated professional with experience in administration, clearing, transport and logistics. Excellent interpersonal skills and attention to detail.</p>
-                    <div class="personal-info">
-                        <h3>Personal Details</h3>
-                        <ul>
-                            <li><strong>Email:</strong> otigef@yahoo.com</li>
-                            <li><strong>Phone:</strong> 0799244847</li>
-                            <li><strong>Location:</strong> Yala, Kenya</li>
-                        </ul>
+    <body>
+      <div class="hero-header">
+            <div class="wrapper">
+               <header>
+                  <div class="logo">
+                    
+                   
+                       <div class="logo-text">Geoffrey Nehemiah Otieno</div>  
                     </div>
-                </div>
+                    <nav>
+                        <div class="togglebtn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <ul class="navlinks">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">portfolio</a></li>
+                            <li><a href="#">Resume</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </header>
+                <div class="container">
+                    <div class="hero-pic">
+                        <img src="images\background-image.jpg" alt="profile hero-pic">
+                    </div>
+                    <div class="hero-text">
+                        <h5>Hi, I'm <span class="input">Fullstack Developer MERN</span></h5>
+                        <h1>Geoffrey Nehemiah Otieno</h1>
+                        <p>I'm a fullstack developer with a passion for creating dynamic and 
+                            responsive web applications. I specialize in the MERN stack, which includes MongoDB,
+                             Express.js, React.js, and Node.js. My goal is to build efficient and scalable applications that provide a 
+                             sgreat user experience.
+                        </p>
+                        <div class="btn-group">
+                            <a href="#" class="btn active">Download CV</a>
+                            <a href="#" class="btn">Contact Me</a>
+
+                        </div>
+                        <div class="social">
+                            <a href="https://www.facebook.com/profile.php?id=100087858272976" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com/otigef" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/in/geoffrey-nehemiah-otieno-a79a296b/" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/Otigef" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
             </div>
+               
+        </div> 
         </div>
-    </section>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+            /** creating button click show hide navbar **/
+            var togglebtn = document.querySelector('.togglebtn');
+            var nav=document.querySelector('.navlinks');
+            var links=document.querySelectorAll(".navlinks li");
 
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2>My Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Professional</h3>
-                    <ul>
-                        <li>Office Administration</li>
-                        <li>Logistics Management</li>
-                        <li>Customer Service</li>
-                        <li>Team Leadership</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Technical</h3>
-                    <ul>
-                        <li>HTML & CSS</li>
-                        <li>JavaScript Basics</li>
-                        <li>Database Management</li>
-                        <li>SAGE Accounting</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ADD THIS SECTION BELOW THE SKILLS SECTION, BEFORE CONTACT SECTION -->
+            togglebtn.addEventListener('click', function() {
+                this.classList.toggle("click");
+                nav.classList.toggle("open");
+                });
+                var typed = new Typed(".input", {
+                    strings: ['Fullstack Developer', 'MERN Stack Developer', 'Web Developer'],
+                    typeSpeed: 100,
+                    backSpeed: 50,
+                    loop: true
+                });
+        </script> 
+        <script>
+const themeToggle = document.getElementById('theme-toggle');
+const body = document.body;
 
-<section id="download-cv" class="download-cv">
-    <div class="container">
-        <h2>Download My CV</h2>
-        <p>You can download a PDF version of my CV using the button below.</p>
-        <a href="assets\Geoffrey_CV.pdf.pdf" download target="_blank" class="btn download-btn">
-            <i class="fas fa-download"></i> Download CV
-        </a>
-        
-    </div>
-</section>
+function setTheme(theme) {
+    if (theme === 'light') {
+        body.classList.add('light-theme');
+        themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+    } else {
+        body.classList.remove('light-theme');
+        themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+    }
+    localStorage.setItem('theme', theme);
+}
 
+// Load saved theme
+const savedTheme = localStorage.getItem('theme') || 'dark';
+setTheme(savedTheme);
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <form id="contactForm">
-                <div class="form-group">
-                    <input type="text" id="name" name="name" placeholder="Your Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" id="email" name="email" placeholder="Your Email" required>
-                </div>
-                <div class="form-group">
-                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-                </div>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-            <div id="formMessage"></div>
-        </div>
-    </section>
-    
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 Geoffrey Otieno. All rights reserved.</p>
-            <div class="social-media">
-                <a href="https://www.linkedin.com/in/geoffrey-nehemiah-otieno-a79a296b/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/Otigef" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://x.com/otigef" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="mailto:otigef@yahoo.com"><i class="fas fa-envelope"></i></a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
+themeToggle.addEventListener('click', () => {
+    const isLight = body.classList.contains('light-theme');
+    setTheme(isLight ? 'dark' : 'light');
+});
+</script>
+    </body>                            
 </html>
